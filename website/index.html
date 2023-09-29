@@ -13,23 +13,30 @@
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            position: relative;
+            background-color: #354E7F;
+            color: #EAEAEA;
             padding: 20px;
-            text-align: center;
+            text-align: left;
+            overflow: hidden;
         }
+        #logo {
+            display: block;
+            margin: 0 auto; 
+}
 
         nav {
-            background-color: #444;
+            background-color: #333333;
             text-align: center;
             padding: 10px;
         }
 
         nav a {
-            color: #fff;
+            color: #FFD700;
             text-decoration: none;
-            margin: 10px;
+            margin: 0 30px; /* Add equal left and right margins to space out the buttons */
         }
+
 
         main {
             max-width: 800px;
@@ -57,8 +64,11 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Home Page</h1>
+        <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706" alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
+        <h1 id="title" style="color: #EAEAEA;">Titans Frontier</h1>
     </header>
+    
+    
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>

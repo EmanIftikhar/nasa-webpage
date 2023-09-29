@@ -13,22 +13,24 @@
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            position: relative;
+            background-color: #354E7F;
+            color: #EAEAEA;
             padding: 20px;
-            text-align: center;
+            text-align: left;
+            overflow: hidden;
         }
 
         nav {
-            background-color: #444;
+            background-color: #333333;
             text-align: center;
             padding: 10px;
         }
 
         nav a {
-            color: #fff;
+            color: #FFD700;
             text-decoration: none;
-            margin: 10px;
+            margin: 0 30px; /* Add equal left and right margins to space out the buttons */
         }
 
         main {
@@ -37,10 +39,28 @@
             padding: 20px;
             background-color: #fff;
         }
+
+          /* Style for sections and subsections */
+          .section {
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .subsection {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <header>
+        <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706" alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
         <h1>Game Bar</h1>
     </header>
     <nav>
@@ -49,8 +69,34 @@
         <a href="game.html">Game Bar</a>
     </nav>
     <main>
-        <p>Visit our game bar</p>
-        <!-- Add more content here as needed -->
+        <div class="section">
+            <h2 style="text-align: center;">Summary of the Game</h2>
+            <p>Embark on a captivating scientific adventure to Saturn's mysterious moon, Titan. Take on the role of Ethan, a skilled scientist, and navigate the challenges of conducting research on this enigmatic world. Join forces with a team of experts led by Dr. Brooks and geologist Fatima Ahmed as you uncover Titan's unique characteristics and gather critical data.
+
+                Experience the thrill of deep space communication delays and immerse yourself in the wonders of Titan's landscape, atmosphere, and potential water sources. Your mission is to investigate key elements, seeking clues to Titan's habitability.
+                
+                Are you prepared to engage in this scientific exploration and make groundbreaking discoveries? Play now and be part of a mission that may reshape our understanding of distant worlds.</p>
+            <div class="subsection">
+                <h3>Level 1 - Exploring Titan</h3>
+            </div>
+            <div class="subsection">
+                <h3>Level 2 - The Search for Water</h3>
+            </div>
+            <div class="subsection">
+                <h3>Level 3 - Life</h3>
+            </div>
+        </div>
+    
+        <div class="section">
+            <h2 style="text-align: center;">Instructions to Play</h2>
+            <!-- Add your instructions content here -->
+        </div>
+    
+        <div class="section">
+            <h2 style="text-align: center;">The Game</h2>
+            <p>Enter Godot API</p>
+            <!-- Add your game content here -->
+        </div>
     </main>
 </body>
 </html>

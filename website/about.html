@@ -13,22 +13,24 @@
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            position: relative;
+            background-color: #354E7F;
+            color: #EAEAEA;
             padding: 20px;
-            text-align: center;
+            text-align: left;
+            overflow: hidden;
         }
 
         nav {
-            background-color: #444;
+            background-color: #333333;
             text-align: center;
             padding: 10px;
         }
 
         nav a {
-            color: #fff;
+            color: #FFD700;
             text-decoration: none;
-            margin: 10px;
+            margin: 0 30px; /* Add equal left and right margins to space out the buttons */
         }
 
         main {
@@ -37,10 +39,39 @@
             padding: 20px;
             background-color: #fff;
         }
+
+        .team-section {
+            background-color: #f7f7f7;
+            padding: 40px 0;
+        }
+
+        .team-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            text-align: center;
+            margin: 20px;
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .team-member img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; 
+        }
+
+        .team-member p {
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
     <header>
+        <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706" alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
         <h1>About Us</h1>
     </header>
     <nav>
@@ -49,9 +80,40 @@
         <a href="game.html">Game Bar</a>
     </nav>
     <main>
-        <p>We are a passionate team dedicated to providing you with the best gaming experience.</p>
-        <!-- Add more content here as needed -->
-        <!-- Pull request test -->
+        <h1>Our Team</h1>
+        <br>
+        <!-- Our Team Section -->
+    <section class="team-section">
+        <div class="team-row">
+            <div class="team-member">
+                <img src="ziyaan.jpg" alt="Team Member 1">
+                <p>Ziyaan Mir</p>
+            </div>
+            <div class="team-member">
+                <img src="rohan.jpg" alt="Team Member 2">
+                <p>Rohan Advani</p>
+            </div>
+            <div class="team-member">
+                <img src="eman.jpg" alt="Team Member 3">
+                <p>Eman Ifkthikar</p>
+            </div>
+        </div>
+        <div class="team-row">
+            <div class="team-member">
+                <img src="areej.jpg" alt="Team Member 4">
+                <p>Areej Ahmed</p>
+            </div>
+            <div class="team-member">
+                <img src="imaad.jpg" alt="Team Member 5">
+                <p>Muhammad Imaad</p>
+            </div>
+            <div class="team-member">
+                <img src="faiz.jpg" alt="Team Member 6">
+                <p>Mohammed Faiz</p>
+            </div>
+        </div>
+    </section>
+
     </main>
 </body>
 </html>
