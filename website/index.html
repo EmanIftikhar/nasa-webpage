@@ -20,10 +20,6 @@
             text-align: left;
             overflow: hidden;
         }
-        #logo {
-            display: block;
-            margin: 0 auto; 
-}
 
         nav {
             background-color: #333333;
@@ -37,52 +33,133 @@
             margin: 0 30px; /* Add equal left and right margins to space out the buttons */
         }
 
-
         main {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            color: #333;
+        /* Style for sections and subsections */
+        .section {
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
-        ul {
-            list-style: disc;
-            margin-left: 20px;
-            padding-left: 20px;
+        .subsection {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
-        ul li {
-            margin-bottom: 10px;
-            line-height: 1.5;
+        /* Centered image container for the carousel */
+        .carousel-container {
+            text-align: center;
+            position: relative; /* Add relative positioning to the container */
+        }
+
+        /* Style for images within the carousel */
+        .carousel-container img {
+            width: 500px; /* Adjust the size of the carousel images */
+            height: auto;
+            margin: 0 auto; /* Center the images horizontally */
+            display: none; /* Initially hide all images */
+        }
+
+        /* Style for the previous and next buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .prev {
+            left: 10px; /* Position the previous button to the left */
+        }
+
+        .next {
+            right: 10px; /* Position the next button to the right */
         }
     </style>
 </head>
 <body>
     <header>
         <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706" alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
-        <h1 id="title" style="color: #EAEAEA;">Titans Frontier</h1>
+        <h1>Welcome to Our Home Page</h1>
     </header>
-    
-    
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="game.html">Game Bar</a>
     </nav>
     <main>
-        <h1>Overview of Titan</h1>
-        <ul>
-            <li>Titan is the only world besides Earth that has standing bodies of liquid, including rivers, lakes, and seas, on its surface.</li>
-            <li>Like Earth, Titan’s atmosphere is primarily nitrogen, plus a small amount of methane. Titan's atmosphere is mostly nitrogen (about 95 percent) and methane (about 5 percent), with small amounts of other carbon-rich compounds.</li>
-            <li>Titan follows an earthlike cycle of liquids raining from clouds, flowing across its surface, filling lakes and seas, and evaporating back into the sky (akin to Earth’s water cycle).</li>
-            <li>Titan is also thought to have a subsurface ocean of water.</li>
-        </ul>
+        <div class="section">
+            <h2>Overview of Titan</h2>
+            <ul>
+                <li>Titan is the only world besides Earth that has standing bodies of liquid, including rivers, lakes, and seas, on its surface.</li>
+                <li>Like Earth, Titan’s atmosphere is primarily nitrogen, plus a small amount of methane. Titan's atmosphere is mostly nitrogen (about 95 percent) and methane (about 5 percent), with small amounts of other carbon-rich compounds.</li>
+                <li>Titan follows an earthlike cycle of liquids raining from clouds, flowing across its surface, filling lakes and seas, and evaporating back into the sky (akin to Earth’s water cycle).</li>
+                <li>Titan is also thought to have a subsurface ocean of water.</li>
+            </ul>
+            
+            <!-- Adding the image carousel container -->
+            <div class="carousel-container">
+                <!-- Image 1 -->
+                <img class="carousel-image" src="general.png" alt="Image 1">
+                
+                <!-- Image 2 -->
+                <img class="carousel-image" src="establishment.png" alt="Image 2">
+                
+                <!-- Image 3 -->
+                <img class="carousel-image" src="people.png" alt="Image 3">
+                
+                <!-- Image 4 -->
+                <img class="carousel-image" src="dragonfly.png" alt="Image 4">
+                
+                <!-- Previous and Next buttons for image navigation -->
+                <span class="prev" onclick="changeImage(-1)">Previous</span>
+                <span class="next" onclick="changeImage(1)">Next</span>
+            </div>
+        </div>
     </main>
+
+    <!-- JavaScript for the image carousel -->
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-image');
+
+        function showImage(index) {
+            if (index < 0) {
+                currentIndex = images.length - 1;
+            } else if (index >= images.length) {
+                currentIndex = 0;
+            }
+            images.forEach((image, i) => {
+                if (i === currentIndex) {
+                    image.style.display = 'block';
+                } else {
+                    image.style.display = 'none';
+                }
+            });
+        }
+
+        function changeImage(offset) {
+            currentIndex += offset;
+            showImage(currentIndex);
+        }
+
+        // Show the first image initially
+        showImage(currentIndex);
+    </script>
 </body>
 </html>
 
