@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,14 +25,31 @@
         nav {
             background-color: #333333;
             text-align: center;
-            padding: 10px;
+            padding: 18px;
         }
 
         nav a {
             color: #FFD700;
             text-decoration: none;
-            margin: 0 30px; /* Add equal left and right margins to space out the buttons */
+            margin: 0 10px;
+            /* Adjust the button spacing as needed */
+            padding: 10px 20px;
+            /* Add padding to create a button-like appearance */
+            border-radius: 20px;
+            /* Add rounded corners for a bubble-like effect */
+            background-color: #555;
+            /* Set the background color for the buttons */
+            transition: background-color 0.3s ease;
+            /* Add a smooth transition effect on hover */
         }
+
+        nav a:hover {
+            background-color: #777;
+            /* Change the background color on hover */
+            color: #FFD700;
+            /* Change the text color on hover */
+        }
+
 
         main {
             max-width: 800px;
@@ -40,8 +58,8 @@
             background-color: #fff;
         }
 
-          /* Style for sections and subsections */
-          .section {
+        /* Style for sections and subsections */
+        .section {
             background-color: #f7f7f7;
             padding: 20px;
             margin: 20px 0;
@@ -56,11 +74,21 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+
+        .titan1 {
+            width: 50%;
+            border-radius: 7%;
+            display: block;
+            margin: 0 auto;
+
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706" alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
+        <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706"
+            alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
         <h1>Game Bar</h1>
     </header>
     <nav>
@@ -71,27 +99,40 @@
     <main>
         <div class="section">
             <h2 style="text-align: center;">Summary of the Game</h2>
-            <p>Embark on a captivating scientific adventure to Saturn's mysterious moon, Titan. Take on the role of Ethan, a skilled scientist, and navigate the challenges of conducting research on this enigmatic world. Join forces with a team of experts led by Dr. Brooks and geologist Fatima Ahmed as you uncover Titan's unique characteristics and gather critical data.
+            <p>Embark on a captivating scientific adventure to Saturn's mysterious moon, Titan. Take on the role of
+                Ethan, a skilled scientist, and navigate the challenges of conducting research on this enigmatic world.
+                Join forces with a team of experts led by Dr. Brooks and geologist Fatima Ahmed as you uncover Titan's
+                unique characteristics and gather critical data.
 
-                Experience the thrill of deep space communication delays and immerse yourself in the wonders of Titan's landscape, atmosphere, and potential water sources. Your mission is to investigate key elements, seeking clues to Titan's habitability.
-                
-                Are you prepared to engage in this scientific exploration and make groundbreaking discoveries? Play now and be part of a mission that may reshape our understanding of distant worlds.</p>
+                Experience the thrill of deep space communication delays and immerse yourself in the wonders of Titan's
+                landscape, atmosphere, and potential water sources. Your mission is to investigate key elements, seeking
+                clues to Titan's habitability.
+
+                Are you prepared to engage in this scientific exploration and make groundbreaking discoveries? Play now
+                and be part of a mission that may reshape our understanding of distant worlds.</p>
             <div class="subsection">
-                <h3>Level 1 - Exploring Titan</h3>
+                <h3>Level 1 - Exploring Titan</h3> <br>
+                <img class="titan1" src="titan_lvl1.jpeg" alt="Titan Surface">
+                <br>
+
             </div>
             <div class="subsection">
-                <h3>Level 2 - The Search for Water</h3>
+                <h3>Level 2 - The Search for Water</h3> <br>
+                <img class="titan1" src="drill_lvl2.jpeg" alt="Titan Surface">
+                <br>
             </div>
             <div class="subsection">
-                <h3>Level 3 - Life</h3>
+                <h3>Level 3 - Life</h3> <br>
+                <img class="titan1" src="lab_lvl3.jpeg" alt="Titan Surface">
+                <br>
             </div>
         </div>
-    
+
         <div class="section">
             <h2 style="text-align: center;">Instructions to Play</h2>
             <!-- Add your instructions content here -->
         </div>
-    
+
         <div class="section">
             <h2 style="text-align: center;">The Game</h2>
             <p>Enter Godot API</p>
@@ -99,5 +140,5 @@
         </div>
     </main>
 </body>
-</html>
 
+</html>
