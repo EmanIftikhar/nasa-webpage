@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,17 +78,44 @@
         .team-member img {
             max-width: 100%;
             height: auto;
-            border-radius: 50%; 
+            border-radius: 50%;
+            filter: grayscale(100%); /* Make the images grayscale by default */
+            transition: filter 0.3s ease; 
         }
+        .team-member:hover img {
+            filter: grayscale(0%); /* Remove grayscale on hover to make the images colorful */
+}
 
         .team-member p {
             margin: 10px 0;
         }
+
+        #teamlogo {
+            display: block;
+            border-radius: 5%;
+            margin: auto;
+            text-align: center;
+        }
+
+        #TeamName {
+            font-size: 56px;
+            color: #000435;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 10px;
+            font-family: "Arial", sans-serif;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        #TeamName:hover{
+            color: #ff6600; /* Change the text color on hover */
+            transform: scale(1.1);
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706" alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
+        <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706"
+            alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
         <h1>About Us</h1>
     </header>
     <nav>
@@ -96,40 +124,52 @@
         <a href="game.html">Game Bar</a>
     </nav>
     <main>
-        <h1>Our Team</h1>
-        <br>
+        <div id="team">
+            <h1 id="TeamName" style="text-align: center; ">Titan Voyagers</h1>
+            <img id="teamlogo" src="team_logo.png" alt="Team Logo" width="350"> <br>
+        </div>
+        <h1 style="text-align: center;">Team members</h1>
         <!-- Our Team Section -->
-    <section class="team-section">
-        <div class="team-row">
-            <div class="team-member">
-                <img src="ziyaan.jpg" alt="Team Member 1">
-                <p>Ziyaan Mir</p>
+        <section class="team-section">
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="ziyaan.jpg" alt="Team Member 1">
+                    <p style="font-weight: bold;">Ziyaan Mir</p>
+                    <p>Lead Gameplay Design, Development & Logic</p>
+                </div>
+                <div class="team-member">
+                    <img src="rohan.jpg" alt="Team Member 2">
+                    <p style="font-weight: bold;">Rohan Advani</p>
+                    <p>Game Mechanics & Media integration</p>
+                </div>
+                <div class="team-member">
+                    <img src="eman.jpg" alt="Team Member 3">
+                    <p style="font-weight: bold;">Eman Ifkthikar</p>
+                    <p>Gameplay Design and Development</p>
+                </div>
             </div>
-            <div class="team-member">
-                <img src="rohan.jpg" alt="Team Member 2">
-                <p>Rohan Advani</p>
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="areej.jpg" alt="Team Member 4">
+                    <p style="font-weight: bold;">Areej Ahmed</p>
+                    <p>Character and Screen Design</p>
+                </div>
+                <div class="team-member">
+                    <img src="imaad.jpg" alt="Team Member 5">
+                    <p style="font-weight: bold;">Muhammad Imaad</p>
+                    <p>Storyline, Media & Game Design</p>
+                </div>
+                <div class="team-member">
+                    <a href="https://www.linkedin.com/in/faiziqbal/">
+                        <img src="faiz.jpg" alt="Team Member 6">
+                    </a>
+                    <p style="font-weight: bold;">Mohammed Faiz</p>
+                    <p>Game Development & Design</p>
+                </div>
             </div>
-            <div class="team-member">
-                <img src="eman.jpg" alt="Team Member 3">
-                <p>Eman Ifkthikar</p>
-            </div>
-        </div>
-        <div class="team-row">
-            <div class="team-member">
-                <img src="areej.jpg" alt="Team Member 4">
-                <p>Areej Ahmed</p>
-            </div>
-            <div class="team-member">
-                <img src="imaad.jpg" alt="Team Member 5">
-                <p>Muhammad Imaad</p>
-            </div>
-            <div class="team-member">
-                <img src="faiz.jpg" alt="Team Member 6">
-                <p>Mohammed Faiz</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
     </main>
 </body>
+
 </html>
