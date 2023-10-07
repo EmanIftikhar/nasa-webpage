@@ -51,17 +51,22 @@
             /* Background color for the special button */
             padding: 10px 20px;
             /* Add padding to create a button-like appearance */
-            border-radius: 5px;
-            /* Add rounded corners for a button effect */
-            /* Add any other styles you want for this button */
+            border-radius: 4px;
+            border: 2px solid #FFD700;
         }
-        
-        nav a:hover {
+
+        #play-button:hover {
+            color: #FFD700;
+            /* Change text color on hover for the special button */
+            background-color: #333333;
+        }
+
+        nav a:not(#play-button):hover {
             color: #FFD700;
             /* Change text color on hover */
         }
 
-        
+
 
         main {
             max-width: 800px;
