@@ -2,15 +2,6 @@
 
 Welcome to Titan Voyagers, an exciting and educational game that takes you on a captivating scientific adventure to Saturn's mysterious moon, Titan. In this game, you'll assume the role of Ethan, a skilled scientist, and embark on a thrilling journey to uncover the secrets of this enigmatic world. Are you ready to explore the wonders of Titan and make groundbreaking discoveries?
 
-## Table of Contents
-- [Game Overview](#game-overview)
-- [Installation](#installation)
-- [How to Play](#how-to-play)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Game Overview
 
 Titan Voyagers is an immersive game that offers players a chance to:
