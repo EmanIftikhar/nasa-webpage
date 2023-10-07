@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website - Home</title>
+    <title>Your Website - Game Bar</title>
     <style>
+        /* Updated CSS with the "Poppins" font */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            /* Use the Poppins font */
             background-color: #f2f2f2;
             margin: 0;
             padding: 0;
@@ -14,29 +18,52 @@
 
         header {
             position: relative;
-            background-color: #8399c5;
+            background-color: #354E7F;
             color: #EAEAEA;
             padding: 20px;
             text-align: left;
             overflow: hidden;
-        } 
+        }
 
         nav {
             background-color: #333333;
             text-align: center;
-            padding: 18px 0; /* Adjust vertical padding */
+            padding: 18px 0;
+            /* Adjust vertical padding */
         }
 
         nav a {
-            color: #EAEAEA; /* Lighter text color for improved contrast */
+            color: #EAEAEA;
+            /* Lighter text color for improved contrast */
             text-decoration: none;
-            margin: 0 20px; /* Increased spacing between links */
-            font-size: 18px; /* Slightly larger font size */
-            transition: color 0.3s ease; /* Smooth text color transition */
+            margin: 0 20px;
+            /* Increased spacing between links */
+            font-size: 18px;
+            /* Slightly larger font size */
+            transition: color 0.3s ease;
+            /* Smooth text color transition */
         }
 
-        nav a:hover {
-            color: #FFD700; /* Change text color on hover */
+        #play-button {
+            color: #333333;
+            /* Text color for the special button */
+            background-color: #FFD700;
+            /* Background color for the special button */
+            padding: 10px 20px;
+            /* Add padding to create a button-like appearance */
+            border-radius: 4px;
+            border: 2px solid #FFD700;
+        }
+
+        #play-button:hover {
+            color: #FFD700;
+            /* Change text color on hover for the special button */
+            background-color: #333333;
+        }
+
+        nav a:not(#play-button):hover {
+            color: #FFD700;
+            /* Change text color on hover */
         }
 
         main {
@@ -64,18 +91,19 @@
 
         .carousel-container {
             text-align: center;
-            position: relative; 
+            position: relative;
         }
 
         .carousel-container img {
-            width: 500px; 
+            width: 500px;
             height: auto;
-            margin: 0 auto; 
-            display: none; 
+            margin: 0 auto;
+            display: none;
             border-radius: 10px;
         }
 
-        .prev, .next {
+        .prev,
+        .next {
             cursor: pointer;
             position: absolute;
             top: 50%;
@@ -86,11 +114,11 @@
         }
 
         .prev {
-            left: 10px; 
+            left: 10px;
         }
 
         .next {
-            right: 10px; 
+            right: 10px;
         }
 
         /* Custom CSS for the mind map */
@@ -99,23 +127,28 @@
             justify-content: center;
             align-items: center;
             height: 300px;
-            background-color: #bca3d7; /* Background color for the mind map */
+            background-color: #bca3d7;
+            /* Background color for the mind map */
         }
 
         .mind-node {
-            background-color: #354E7F; /* Node background color */
+            background-color: #354E7F;
+            /* Node background color */
             padding: 10px 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             text-align: center;
             margin: 0 20px;
-            color: #EAEAEA; /* Node text color */
+            color: #EAEAEA;
+            /* Node text color */
         }
     </style>
 </head>
+
 <body>
     <header>
-        <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706" alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
+        <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706"
+            alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
         <h1>Titan City 3023</h1>
     </header>
     <nav>
@@ -128,27 +161,32 @@
         <!-- Mind Map Section -->
         <div class="section">
             <h2 style="text-align: center;">Aims and Objectives</h2>
-                <div class="mind-node">
-                    <h3>Provide information and education about Titan's unique characteristics and scientific significance.</h3>
-                </div>
-                <div class="mind-node">
-                    <h3>Promote awareness of space exploration and the study of celestial bodies.</h3>
-                </div>
-                <div class="mind-node">
-                    <h3>Encourage scientific research and collaboration on Titan-related projects.</h3>
-                </div>
+            <div class="mind-node">
+                <h3>Provide information and education about Titan's unique characteristics and scientific significance.
+                </h3>
+            </div>
+            <div class="mind-node">
+                <h3>Promote awareness of space exploration and the study of celestial bodies.</h3>
+            </div>
+            <div class="mind-node">
+                <h3>Encourage scientific research and collaboration on Titan-related projects.</h3>
+            </div>
         </div>
 
         <!-- Existing "Overview of Titan" section -->
         <div class="section">
             <h2 style="text-align: center;">Overview of Titan</h2>
             <ul>
-                <li>Titan is the only world besides Earth that has standing bodies of liquid, including rivers, lakes, and seas, on its surface.</li>
-                <li>Like Earth, Titan’s atmosphere is primarily nitrogen, plus a small amount of methane. Titan's atmosphere is mostly nitrogen (about 95 percent) and methane (about 5 percent), with small amounts of other carbon-rich compounds.</li>
-                <li>Titan follows an earthlike cycle of liquids raining from clouds, flowing across its surface, filling lakes and seas, and evaporating back into the sky (akin to Earth’s water cycle).</li>
+                <li>Titan is the only world besides Earth that has standing bodies of liquid, including rivers, lakes,
+                    and seas, on its surface.</li>
+                <li>Like Earth, Titan’s atmosphere is primarily nitrogen, plus a small amount of methane. Titan's
+                    atmosphere is mostly nitrogen (about 95 percent) and methane (about 5 percent), with small amounts
+                    of other carbon-rich compounds.</li>
+                <li>Titan follows an earthlike cycle of liquids raining from clouds, flowing across its surface, filling
+                    lakes and seas, and evaporating back into the sky (akin to Earth’s water cycle).</li>
                 <li>Titan is also thought to have a subsurface ocean of water.</li>
             </ul>
-            
+
             <!-- Adding the image carousel container -->
             <div class="carousel-container">
                 <img class="carousel-image" src="images/general.png" alt="Image 1">
@@ -158,11 +196,12 @@
                 <span class="prev" onclick="changeImage(-1)">Previous</span>
                 <span class="next" onclick="changeImage(1)">Next</span>
             </div>
-            
+
             <!-- New plain container -->
             <div class="subsection">
                 <h2 style="text-align: center;">Demo Content</h2>
-                <p>This is your plain container with demo content. You can add any text, images, or other elements you want here to provide additional information or context related to Titan.</p>
+                <p>This is your plain container with demo content. You can add any text, images, or other elements you
+                    want here to provide additional information or context related to Titan.</p>
             </div>
         </div>
     </main>
@@ -195,13 +234,5 @@
         showImage(currentIndex);
     </script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
