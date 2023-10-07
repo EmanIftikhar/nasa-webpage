@@ -2,198 +2,232 @@
 <html lang="en">
 
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Website - Game Bar</title>
-<style>
-    /* Updated CSS with the "Poppins" font */
-body {
-    font-family: 'Poppins', sans-serif; /* Use the Poppins font */
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website - Game Bar</title>
+    <style>
+        /* Updated CSS with the "Poppins" font */
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Use the Poppins font */
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
 
-header {
-    position: relative;
-    background-color: #354E7F;
-    color: #EAEAEA;
-    padding: 20px;
-    text-align: left;
-    overflow: hidden;
-}
+        header {
+            position: relative;
+            background-color: #354E7F;
+            color: #EAEAEA;
+            padding: 20px;
+            text-align: left;
+            overflow: hidden;
+        }
 
-nav {
-    background-color: #333333;
-    text-align: center;
-    padding: 18px 0; /* Adjust vertical padding */
-}
+        nav {
+            background-color: #333333;
+            text-align: center;
+            padding: 18px 0;
+            /* Adjust vertical padding */
+        }
 
-nav a {
-    color: #EAEAEA; /* Lighter text color for improved contrast */
-    text-decoration: none;
-    margin: 0 20px; /* Increased spacing between links */
-    font-size: 18px; /* Slightly larger font size */
-    font-weight: 500; /* Use a specific font weight */
-    transition: color 0.3s ease; /* Smooth text color transition */
-}
+        nav a {
+            color: #EAEAEA;
+            /* Lighter text color for improved contrast */
+            text-decoration: none;
+            margin: 0 20px;
+            /* Increased spacing between links */
+            font-size: 18px;
+            /* Slightly larger font size */
+            font-weight: 500;
+            /* Use a specific font weight */
+            transition: color 0.3s ease;
+            /* Smooth text color transition */
+        }
 
-nav a:hover {
-    color: #FFD700; /* Change text color on hover */
-}
+        nav a:hover {
+            color: #FFD700;
+            /* Change text color on hover */
+        }
 
 
 
-    main {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-    }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
 
-    /* Style for sections and subsections */
-    .section {
-        background-color: #f7f7f7;
-        padding: 20px;
-        margin: 20px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
+        /* Style for sections and subsections */
+        .section {
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-    .subsection {
-        background-color: #e0e0e0;
-        padding: 10px;
-        padding-right: 35px;
-        padding-left: 35px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        justify-content: space-around;
-    }
+        .subsection {
+            background-color: #e0e0e0;
+            padding: 10px;
+            padding-right: 35px;
+            padding-left: 35px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            justify-content: space-around;
+        }
 
-    .titan1 {
-        width: 55%;
-        border-radius: 7%;
-        display: block;
-        margin: 0 auto;
+        .titan1 {
+            width: 55%;
+            border-radius: 7%;
+            display: block;
+            margin: 0 auto;
 
-    }
-    .keyboardkeys{
-        width: 10%;
-        border-radius: 7%;
-        display: block;
-        margin: 0 auto;
-    }
-    .wasd{
-        width: 30%;
-        border-radius: 7%;
-        display: block;
-        margin: 0 auto;
-    }
+        }
+
+        .keyboardkeys {
+            width: 10%;
+            border-radius: 7%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .wasd {
+            width: 30%;
+            border-radius: 7%;
+            display: block;
+            margin: 0 auto;
+        }
+
         /* Center-align the video container */
         .video-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: auto; /* Set a specific height if needed */
+            height: auto;
+            /* Set a specific height if needed */
         }
+
         iframe {
             aspect-ratio: 16/9;
-            width: 800px; /* Set the width of the video */
+            width: 800px;
+            /* Set the width of the video */
         }
-</style>
+    </style>
 </head>
 
 <body>
-<header>
-    <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706"
-        alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
-    <h1>Play Now</h1>
-</header>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="roadmap.html">Roadmap</a>
-    <a href="game.html">Play Now</a>
-</nav>
-<main>
-    <div class="section">
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/lr4r70DWShk" frameborder="0" allowfullscreen></iframe>
+    <header>
+        <img src="https://static.wikia.nocookie.net/atlantlcs-the-solar-system/images/8/88/Titan.png/revision/latest?cb=20220918124706"
+            alt="Your Image Description" id="logo" align="right" style="width: 75px; height: auto;">
+        <h1>Play Now</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="game.html">Play Now</a>
+    </nav>
+    <main>
+        <div class="section">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/lr4r70DWShk" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
-    </div>
-    <div class="section">
-        <h2 style="text-align: center;">The Game</h2>
-        
-        <!-- Add your game content here -->
-    </div>
-    <div class="section">
-        <h2 style="text-align: center;">How to Play</h2>
-        <div class="instruction">
-            <img class="wasd" src="images/wasd.jpg" alt="WASD Keys">
-            <p style="text-align: center;">Move your character using the <strong>WASD</strong> keys</p>
-        </div>
-        <div class="instruction">
-            <img class="keyboardkeys" src="images/e.png" alt="E Key">
-            <p style="text-align: center;">Interact with NPCs and Lab systems by pressing the <strong>E</strong> key</p>
-        </div>
-        <div class="instruction">
-            <img class="keyboardkeys" src="images/m.png" alt="M Key">
-            <p style="text-align: center;">Access the map by pressing the <strong>M</strong> key</p>
-        </div>
-        <!-- Add any additional instructions here -->
-    </div>
-    
-    <div class="section">
-        <h2 style="text-align: center;">Summary of the Game</h2>
-        <p>Embark on a captivating scientific adventure to Saturn's mysterious moon, Titan. Take on the role of
-            Ethan, a skilled scientist, and navigate the challenges of conducting research on this enigmatic world.
-            Join forces with a team of experts led by Dr. Brooks and geologist Fatima Ahmed as you uncover Titan's
-            unique characteristics and gather critical data.
+        <div class="section">
+            <h2 style="text-align: center;">The Game</h2>
 
-            Experience the thrill of deep space communication delays and immerse yourself in the wonders of Titan's
-            landscape, atmosphere, and potential water sources. Your mission is to investigate key elements, seeking
-            clues to Titan's habitability.
-
-            Are you prepared to engage in this scientific exploration and make groundbreaking discoveries? Play now
-            and be part of a mission that may reshape our understanding of distant worlds.</p>
-        <div class="subsection" style="background-color: #084C61;">
-            <h2 style="color: #f7f7f7; text-align: center;">Level 1 - Exploring Titan</h2> <br>
-            <img class="titan1" src="titan_lvl1.jpeg" alt="Titan Surface">
-            <p style="color: #f7f7f7;">
-                Ethan starts his mission in a busy lab, where he meets Dr. Sarah Brooks and Dr. David Chen. Dr. Brooks asks him to get information from the Dragonfly rover on Titan's Mithrim Montes Ridges to learn if Titan is a good place for life.
-
-                In Task 1, Ethan goes up the tough Mithrim Montes Mountains and meets Mark Foster, who tells him important things about Dragonfly. When Ethan gets to the top, he fixes Dragonfly, connects his tablet, and guesses a four-letter password using Dragonfly's launch year. This shows him cool facts about Titan's icy lakes and methane clouds.
+            <!-- Add your game content here -->
+        </div>
+        <div class="section">
+            <h2 style="text-align: center;">How to Play</h2>
+            <div class="instruction">
+                <img class="wasd" src="images/wasd.jpg" alt="WASD Keys">
+                <p style="text-align: center;">Move your character using the <strong>WASD</strong> keys</p>
+            </div>
+            <div class="instruction">
+                <img class="keyboardkeys" src="images/e.png" alt="E Key">
+                <p style="text-align: center;">Interact with NPCs and Lab systems by pressing the <strong>E</strong> key
                 </p>
-            <br>
-
+            </div>
+            <div class="instruction">
+                <img class="keyboardkeys" src="images/m.png" alt="M Key">
+                <p style="text-align: center;">Access the map by pressing the <strong>M</strong> key</p>
+            </div>
+            <!-- Add any additional instructions here -->
         </div>
-        <div class="subsection" style="background-color: #89608e;">
-            <h2 style="color: #f7f7f7; text-align: center;">Level 2 - The Search for Water</h2> <br>
-            <img class="titan1" src="drill_lvl2.jpeg" alt="Titan Surface">
-            <p style="color: #f7f7f7;">In this level, Ethan finds himself back at the lab with the collected data in hand. They initiate the data transmission back to Earth, where they learn from Dr. Chen that the communication delay due to vast distances in space can take over an hour for messages to reach Earth, and it might be months before receiving a response. This aspect underscores the isolation of their mission.
 
-                As the data transmission progresses, Ethan learns about the considerable challenges and time delays associated with space communication, emphasizing the unique conditions of their mission.
-                
-                The primary task, "Drilling for Water," takes Ethan on a journey to a drill site on Titan. Here, he receives a cutting-edge drilling device from Dr. Chen and is joined by Lisa Rodriguez, a geologist, who provides insight into the significance of finding water on Titan. Ethan operates the drill carefully, unearthing pristine water ice beneath the moon's surface. This experience offers valuable knowledge about the complexities of resource extraction in Titan's extreme environmental conditions.</p>
-            <br>
-        </div>
-        <div class="subsection" style="background-color: #db3a34;">
-            <h2 style="color: #f7f7f7; text-align: center;">Level 3 - Life</h2> <br>
-            <img class="titan1" src="lab_lvl3.jpeg" alt="Titan Surface">
-            <p style="color: #f7f7f7;">Returning to the lab, Ethan is entrusted with the task of analyzing the water's composition and its potential for habitability. Dr. Brooks guides him through a series of tests, explaining the importance of discovering organic molecules that could hint at life.
- 
-                After conducting the tests, Ethan marveled at the possibility of life existing in Titan's subsurface ocean.
-                 
-                As Ethan completes each task, he interacts with various NPCs who share their knowledge about Titan, space communication, drilling, and the hunt for extraterrestrial life.
+        <div class="section">
+            <h2 style="text-align: center;">Summary of the Game</h2>
+            <p>Embark on a captivating scientific adventure to Saturn's mysterious moon, Titan. Take on the role of
+                Ethan, a skilled scientist, and navigate the challenges of conducting research on this enigmatic world.
+                Join forces with a team of experts led by Dr. Brooks and geologist Fatima Ahmed as you uncover Titan's
+                unique characteristics and gather critical data.
+
+                Experience the thrill of deep space communication delays and immerse yourself in the wonders of Titan's
+                landscape, atmosphere, and potential water sources. Your mission is to investigate key elements, seeking
+                clues to Titan's habitability.
+
+                Are you prepared to engage in this scientific exploration and make groundbreaking discoveries? Play now
+                and be part of a mission that may reshape our understanding of distant worlds.</p>
+            <div class="subsection" style="background-color: #084C61;">
+                <h2 style="color: #f7f7f7; text-align: center;">Level 1 - Exploring Titan</h2> <br>
+                <img class="titan1" src="titan_lvl1.jpeg" alt="Titan Surface">
+                <p style="color: #f7f7f7;">
+                    Ethan starts his mission in a busy lab, where he meets Dr. Sarah Brooks and Dr. David Chen. Dr.
+                    Brooks asks him to get information from the Dragonfly rover on Titan's Mithrim Montes Ridges to
+                    learn if Titan is a good place for life.
+
+                    In Task 1, Ethan goes up the tough Mithrim Montes Mountains and meets Mark Foster, who tells him
+                    important things about Dragonfly. When Ethan gets to the top, he fixes Dragonfly, connects his
+                    tablet, and guesses a four-letter password using Dragonfly's launch year. This shows him cool facts
+                    about Titan's icy lakes and methane clouds.
                 </p>
-            <br>
-        </div>
-    </div>
+                <br>
 
-    
-</main>
+            </div>
+            <div class="subsection" style="background-color: #89608e;">
+                <h2 style="color: #f7f7f7; text-align: center;">Level 2 - The Search for Water</h2> <br>
+                <img class="titan1" src="drill_lvl2.jpeg" alt="Titan Surface">
+                <p style="color: #f7f7f7;">In this level, Ethan finds himself back at the lab with the collected data in
+                    hand. They initiate the data transmission back to Earth, where they learn from Dr. Chen that the
+                    communication delay due to vast distances in space can take over an hour for messages to reach
+                    Earth, and it might be months before receiving a response. This aspect underscores the isolation of
+                    their mission.
+
+                    As the data transmission progresses, Ethan learns about the considerable challenges and time delays
+                    associated with space communication, emphasizing the unique conditions of their mission.
+
+                    The primary task, "Drilling for Water," takes Ethan on a journey to a drill site on Titan. Here, he
+                    receives a cutting-edge drilling device from Dr. Chen and is joined by Lisa Rodriguez, a geologist,
+                    who provides insight into the significance of finding water on Titan. Ethan operates the drill
+                    carefully, unearthing pristine water ice beneath the moon's surface. This experience offers valuable
+                    knowledge about the complexities of resource extraction in Titan's extreme environmental conditions.
+                </p>
+                <br>
+            </div>
+            <div class="subsection" style="background-color: #db3a34;">
+                <h2 style="color: #f7f7f7; text-align: center;">Level 3 - Life</h2> <br>
+                <img class="titan1" src="lab_lvl3.jpeg" alt="Titan Surface">
+                <p style="color: #f7f7f7;">Returning to the lab, Ethan is entrusted with the task of analyzing the
+                    water's composition and its potential for habitability. Dr. Brooks guides him through a series of
+                    tests, explaining the importance of discovering organic molecules that could hint at life.
+
+                    After conducting the tests, Ethan marveled at the possibility of life existing in Titan's subsurface
+                    ocean.
+
+                    As Ethan completes each task, he interacts with various NPCs who share their knowledge about Titan,
+                    space communication, drilling, and the hunt for extraterrestrial life.
+                </p>
+                <br>
+            </div>
+        </div>
+
+
+    </main>
 </body>
 
 </html>
