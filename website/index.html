@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website - Home</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            /* Use the Poppins font */
             background-color: #f2f2f2;
             margin: 0;
             padding: 0;
@@ -35,6 +37,17 @@
             transition: color 0.3s ease; /* Smooth text color transition */
         }
 
+        #play-button {
+            color: #333333;
+            /* Text color for the special button */
+            background-color: #FFD700;
+            /* Background color for the special button */
+            padding: 10px 20px;
+            /* Add padding to create a button-like appearance */
+            border-radius: 5px;
+            /* Add rounded corners for a button effect */
+            /* Add any other styles you want for this button */
+        }
         nav a:hover {
             color: #FFD700; /* Change text color on hover */
         }
@@ -103,7 +116,7 @@
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="roadmap.html">Roadmap</a>
-        <a href="game.html">Game Bar</a>
+        <a href="game.html" id="play-button">Play Now</a>
     </nav>
     <main>
         <!-- New container for aims and objectives -->
@@ -138,6 +151,7 @@
                 
                 <span class="prev" onclick="changeImage(-1)">Previous</span>
                 <span class="next" onclick="changeImage(1)">Next</span>
+                <br>
             </div>
             
             <!-- New plain container -->
