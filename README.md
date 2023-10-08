@@ -2,7 +2,7 @@
 
 Welcome to Titan Voyagers, an exciting and educational game that takes you on a captivating scientific adventure to Saturn's mysterious moon, Titan. In this game, you'll assume the role of Ethan, a skilled scientist, and embark on a thrilling journey to uncover the secrets of this enigmatic world. Are you ready to explore the wonders of Titan and make groundbreaking discoveries?
 
-Game ```v1.0``` is Available at :
+Game ```v1.0``` is Available at : https://nasa-titanvoyagers.netlify.app/
 
 
 ## Game Overview
@@ -15,5 +15,5 @@ Titan Voyagers is an immersive game that offers players a chance to:
 - Explore Titan's unique landscape, atmosphere, and potential water sources.
 - Investigate key elements to determine Titan's habitability.
 
-
+## Webpage Deployment Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/17cded1c-a46d-4b37-b856-512969f8bf2a/deploy-status)](https://app.netlify.com/sites/nasa-titanvoyagers/deploys)
