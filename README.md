@@ -14,3 +14,6 @@ Titan Voyagers is an immersive game that offers players a chance to:
 - Experience the challenges of deep space communication delays.
 - Explore Titan's unique landscape, atmosphere, and potential water sources.
 - Investigate key elements to determine Titan's habitability.
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/17cded1c-a46d-4b37-b856-512969f8bf2a/deploy-status)](https://app.netlify.com/sites/nasa-titanvoyagers/deploys)
