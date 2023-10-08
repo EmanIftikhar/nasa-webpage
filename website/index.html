@@ -104,13 +104,16 @@
 
         .prev,
         .next {
-            cursor: pointer;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            padding: 10px;
             background-color: #333;
             color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            /* Rounded edges */
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
         }
 
         .prev {
@@ -119,6 +122,12 @@
 
         .next {
             right: 10px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: #fff;
+            color: #333;
         }
 
         /* Custom CSS for the mind map */
@@ -130,9 +139,12 @@
             background-color: #bca3d7;
             /* Background color for the mind map */
         }
+
         .text-box {
-            background-color: #DEF4C6; /* Set the background color to gold/yellow */
-            color: #333333; /* Set the text color to dark gray */
+            background-color: #DEF4C6;
+            /* Set the background color to gold/yellow */
+            color: #333333;
+            /* Set the text color to dark gray */
             padding: 10px 20px;
             margin: 20px;
             border-radius: 10px;
@@ -150,14 +162,13 @@
         .text-box.active {
             opacity: 1;
         }
-
     </style>
 </head>
 
 <body>
     <header>
         <img src="https://assets.spaceappschallenge.org/media/images/SpaceAppsLogo_Default_2ColorWhi.width-440.jpegquality-60.png"
-        alt="Your Image Description" id="logo" align="right" style="width: 200px; height: auto;">
+            alt="Your Image Description" id="logo" align="right" style="width: 200px; height: auto;">
         <h1 style="color: #333333;">Titan City 3023</h1>
     </header>
     <nav>
@@ -171,7 +182,8 @@
         <div class="section">
             <h2 style="text-align: center;">Aims and Objectives</h2>
             <div class="text-box">
-                <p>Provide information and education about Titan's unique characteristics and scientific significance.</p>
+                <p>Provide information and education about Titan's unique characteristics and scientific significance.
+                </p>
             </div>
             <div class="text-box">
                 <p>Promote awareness of space exploration and the study of celestial bodies.</p>
