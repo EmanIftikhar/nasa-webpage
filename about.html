@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titan's Frontier</title>
@@ -25,6 +25,7 @@
             overflow: hidden;
         }
 
+        /* Navigation Bar */
         nav {
             background-color: #333333;
             text-align: center;
@@ -32,12 +33,28 @@
             /* Adjust vertical padding */
         }
 
-        nav a {
+        .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-list li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .nav-list a {
             color: #EAEAEA;
             /* Lighter text color for improved contrast */
             text-decoration: none;
-            margin: 0 20px;
-            /* Increased spacing between links */
             font-size: 18px;
             /* Slightly larger font size */
             transition: color 0.3s ease;
@@ -61,12 +78,31 @@
             background-color: #333333;
         }
 
-        nav a:not(#play-button):hover {
+        .nav-list a:not(#play-button):hover {
             color: #FFD700;
             /* Change text color on hover */
         }
 
+        /* Media query for mobile view */
+        @media screen and (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
 
+            .nav-list {
+                display: none;
+            }
+
+            .nav-list.active {
+                display: block;
+                text-align: center;
+            }
+
+            .nav-list.active li {
+                display: block;
+                margin: 25px 0;
+            }
+        }
 
         main {
             max-width: 800px;
@@ -137,16 +173,23 @@
         <h1 style="color: #333333;">About Us</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="roadmap.html">Roadmap</a>
-        <a href="game.html" id="play-button">Play Now</a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="game.html" id="play-button">Play Now</a></li>
+        </ul>
     </nav>
     <main>
         <div id="team">
             <h1 id="TeamName" style="text-align: center; ">Team Titan Voyagers</h1>
             <img id="teamlogo" src="website/team_logo.png" alt="Team Logo" width="250"> <br>
-            <p>Titan Voyagers consists of six 3rd year Computer Science students studying in Heriot-Watt University Dubai. A group of close friends as well, this team bring the right balance of chemistry and skills in the aspect of game making. From creativity to technical implementation, this team has got it all. The group aims and aspires to reach a wide audience to inspire and instill values of education, space exploration and discovery.</p>
+            <p>Titan Voyagers consists of six 3rd year Computer Science students studying in Heriot-Watt University
+                Dubai. A group of close friends as well, this team bring the right balance of chemistry and skills in
+                the aspect of game making. From creativity to technical implementation, this team has got it all. The
+                group aims and aspires to reach a wide audience to inspire and instill values of education, space
+                exploration and discovery.</p>
         </div>
         <h1 style="text-align: center;">Team members</h1>
         <!-- Our Team Section -->
@@ -209,6 +252,13 @@
         </section>
 
     </main>
+    <script>
+        function toggleMenu() {
+            var navList = document.querySelector(".nav-list");
+            navList.classList.toggle("active");
+        }
+    </script>
+
 </body>
 
 </html>
